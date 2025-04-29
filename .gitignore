@@ -1,0 +1,11 @@
+# Ignorar arquivos gerados automaticamente
+**/obj/
+**/bin/
+*.cache
+*.editorconfig
+*.nuget.*
+*.AssemblyInfo.cs
+*.AssemblyInfoInputs.cache
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.assets.cache
+project.assets.json
