@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Scripts
+namespace EX2
 {
     class Program
     {

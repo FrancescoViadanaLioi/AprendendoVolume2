@@ -1,11 +1,14 @@
 using System;
 using System.Globalization;
 
-class HelloWorld
+namespace EX1
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello World!");
-        Console.ReadLine();
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            Console.ReadLine();
+        }
     }
 }
