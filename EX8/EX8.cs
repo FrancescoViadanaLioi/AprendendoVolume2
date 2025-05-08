@@ -10,7 +10,7 @@ namespace EX8
 
             while(i<x)
             {
-                i +=1;
+                i += 1;
                 y += i;
                 Console.Write($"{i} ");
                 Console.WriteLine(y);
