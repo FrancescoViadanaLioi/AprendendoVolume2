@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace EX11
+namespace EX011
 {
     class Program
     {
@@ -10,16 +10,17 @@ namespace EX11
             int idade = 0, soma = 0, cont = 0;
             double media = 0;
 
-            // Primeira leitura FORÇADA: usuário só sai daqui digitando uma idade válida >= 0
+            // Primeira leitura FORÇADA: usuário só sai daqui digitando uma idade válida.Isto é, maior ou igual a zero e menor que 120.
+            // Se o usuário digitar uma idade negativa ou um número maior que 120, o programa NÃO sai do loop.
             while (true)
             {
                 LerIdade(ref idade);
-                if (idade >= 0) break;
-                Console.WriteLine("Não começa com gracinha. Digite uma idade válida.\n");
+                if (idade >= 0 && idade <= 120) break;
+                Console.WriteLine("Digite uma idade válida.\n");
             }
 
             // Loop de coleta de idades
-            while (idade >= 0)
+            while (idade >= 0 && idade <= 120)
             {
                 soma += idade;
                 cont++;

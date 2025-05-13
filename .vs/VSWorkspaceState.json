@@ -1,14 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\EX1",
-    "\\EX1\\EX1",
-    "\\EX2",
-    "\\EX2\\EX2",
-    "\\EX4",
-    "\\EX6",
-    "\\EX7"
+    "\\EX01",
+    "\\EX011",
+    "\\EX01\\EX01",
+    "\\EX02",
+    "\\EX02\\EX02",
+    "\\EX04",
+    "\\EX06",
+    "\\EX07"
   ],
-  "SelectedNode": "\\EX4\\EX4.cs",
+  "SelectedNode": "\\EX011\\EX011.csproj",
   "PreviewInSolutionExplorer": false
 }

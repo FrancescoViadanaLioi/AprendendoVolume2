@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
 
-namespace EX3
+namespace EX03
 {
     class Program
     {

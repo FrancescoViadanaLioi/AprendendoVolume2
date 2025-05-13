@@ -9,3 +9,4 @@
 *.GeneratedMSBuildEditorConfig.editorconfig
 *.assets.cache
 project.assets.json
+ref.txt
