@@ -10,3 +10,10 @@
 *.assets.cache
 project.assets.json
 ref.txt
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+bin/
+obj/
