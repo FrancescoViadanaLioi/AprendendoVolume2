@@ -10,7 +10,7 @@ namespace EX21
             while (true)
             {
                 double tempC = TempEmCelsius();
-                double tempF = (9 * tempC) / 5 + 32;
+                double tempF = TempEmFahrenheit(tempC);
                 Console.WriteLine($"A temperatura de {tempC.ToString("F2", CultureInfo.InvariantCulture)}°C é igual a {tempF.ToString("F2", CultureInfo.InvariantCulture)}°F");
 
                 string resposta = SorN();
@@ -34,6 +34,8 @@ namespace EX21
                 Console.Clear();
             }
         }
+        static double TempEmFahrenheit(double c) => (9 * c) / 5 + 32;
+
         static string SorN()
         {
            while (true)
