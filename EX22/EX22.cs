@@ -6,9 +6,8 @@ namespace EX22
     {
         static void Main(string[] args)
         {
-            ValidEntrada();
-            int somaFinal = Loop(n);
-            Console.WriteLine($"A soma dos ímpares *entre* os númreros inseridos é igual {somaFinal}.");
+            int n = ValidEntrada();
+            Loop(n);
             Console.ReadKey();
         }
         static int ValidEntrada()
@@ -22,15 +21,14 @@ namespace EX22
                 LimparEContinuar();
             }
         }
-        static int Loop(int n)
+        static void Loop(int n)
         {
-            int soma = 0;
             for (int i = 0; i < n; i++)
             {
                 (int x, int y) = ValidLoop();
-                soma += SomarImparesEntreXeY(x,y);
+                int somaIntervalo = SomarImparesEntreXeY(x, y);
+                Console.WriteLine($"A soma dos ímpares entre o intervalo {x} e {y} é de {somaIntervalo}.");
             }
-            return soma;
         }
         static (int x, int y) ValidLoop()
         {
@@ -50,7 +48,7 @@ namespace EX22
             int soma = 0;
             int comeco = Math.Min(x, y);
             int fim = Math.Max(x, y);
-            
+
             for (int i = comeco + 1; i <= fim; i++)
             {
                 if (i % 2 != 0) soma += i;
