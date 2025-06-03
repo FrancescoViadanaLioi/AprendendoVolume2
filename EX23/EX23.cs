@@ -15,7 +15,8 @@ namespace EX23
             {
                 Console.WriteLine($"Vetor[{i + 1}]: {vetor[i]}");
             }
-            Limpar();
+            Console.ReadKey();
+            Console.Clear();
         }
         static int EntradaValida()
         {
