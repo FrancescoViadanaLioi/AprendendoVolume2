@@ -17,5 +17,20 @@ namespace Metodos
                 Limpar.LimparTela();
             }             
         }
+        public int[] Loop(int Nvet)
+        {
+            int[] vetor = new int[Nvet];
+
+            for (int i = 0; i < Nvet; i++)
+            {
+                while(true)
+                {
+                    Console.Write($"Digite o valor do vetor {i + 1}: ");
+                    if (int.TryParse(Console.ReadLine(), out vetor[i])) break;
+                    Limpar.LimparTela();
+                }
+            }
+            return vetor;
+        }
     }
 }
