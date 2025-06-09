@@ -1,5 +1,4 @@
 using System;
-using System.Globalization;
 using Utilitarios;
 
 namespace Metodos
@@ -10,17 +9,17 @@ namespace Metodos
         {
             while (true)
             {
-                int Nvet;
+                int tamanhoVetor;
                 Console.Write("Digite o tamanho do vetor: ");
-                if (int.TryParse(Console.ReadLine(), out Nvet) && Nvet > 0) return Nvet;
+                if (int.TryParse(Console.ReadLine(), out tamanhoVetor) && tamanhoVetor > 0) return tamanhoVetor;
                 Limpar.LimparTela();
             }
         }
-        public int[] LerValoresVetor(int Nvet)
+        public int[] LerValoresVetor(int tamanhoVetor)
         {
-            int[] vetor = new int[Nvet];
+            int[] vetor = new int[tamanhoVetor];
 
-            for (int i = 0; i < Nvet; i++)
+            for (int i = 0; i < tamanhoVetor; i++)
             {
                 while (true)
                 {
@@ -31,7 +30,7 @@ namespace Metodos
             }
             return vetor;
         }
-        public double CalculoMedia(int[] vetor)
+        public double CalcularMedia(int[] vetor)
         {
             int soma = 0;
 
@@ -39,9 +38,7 @@ namespace Metodos
             {
                 soma += valor;
             }
-            double media = (double)soma / vetor.Length;
-
-            return media;
+            return (double)soma / vetor.Length;
         }
     }
 }
