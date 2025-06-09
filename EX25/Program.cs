@@ -1,4 +1,5 @@
 ﻿using System;
+using Metodos;
 
 namespace EX25
 {
