@@ -3,14 +3,20 @@ using Miscelania;
 
 namespace DadosPublicos
 {
-	public class NumeroDePessoas
+	public static class NumeroPessoas
 	{
-		public static int QuantDePessoas()
+		public static int Quantidade;
+
+		public static int Capturar()
 		{
 			while (true)
 			{
 				Console.Write("Quantas pessoas serão analisadas? ");
-				if (int.TryParse(Console.ReadLine(), out int nPessoas)) return nPessoas;
+				if (int.TryParse(Console.ReadLine(), out int nPessoas))
+				{
+					Quantidade = nPessoas;
+					return;
+				}
 				LimparTela.Executar();
 			}
 		}
