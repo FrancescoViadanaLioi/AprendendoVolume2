@@ -2,7 +2,7 @@ using System;
 
 namespace Miscelania
 {
-    public static class LimparTela // Classe criada para limpar a tela em caso de erro
+    public static class LimparTela // Classe utilitária que exibe uma mensagem de erro e limpa a tela após pressionar uma tecla
     {
         public static void Executar()
         {
