@@ -1,12 +1,11 @@
 using System;
-using System.Globalization;
 using Miscelania;
 
-namespace Processamento
+namespace DadosPublicos
 {
-	public class EntrarComDados
+	public class NumeroDePessoas
 	{
-		public int QuantDePessoas()
+		public static int QuantDePessoas()
 		{
 			while (true)
 			{
