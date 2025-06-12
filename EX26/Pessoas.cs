@@ -47,7 +47,7 @@ namespace Pessoas
                 while (true)
                 {
                     Console.Write($"Digite a idade da pessoa {i + 1}: ");
-                    if(int.TryParse(Console.ReadLine(), out int idade) && idade > 0)
+                    if(int.TryParse(Console.ReadLine(), out int idade) && (idade > 0 && idade <= 120))
                     {
                         idades[i] = idade;
                         break;

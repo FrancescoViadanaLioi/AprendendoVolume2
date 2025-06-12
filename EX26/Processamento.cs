@@ -18,7 +18,7 @@ namespace Processamento
     }
     public static class AtribuirCalculos
     {
-        public static (double mediaIdade, double mediaAltura) AtribuirMedias(int[] idades, double[] alturas)
+        public static (double mediaIdade, double mediaAltura) AtribuirMedia(int[] idades, double[] alturas)
         {
             double mediaIdade = Calcular.CalcularMediaIdade(idades);
             double mediaAltura = Calcular.CalcularMediaAltura(alturas);
