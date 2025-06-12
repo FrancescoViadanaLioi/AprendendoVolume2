@@ -13,8 +13,16 @@ namespace Processamento
             var nomes = new Nomes().InserirNome();
             var idades = new Idades().InserirIdade();
             var alturas = new Alturas().InserirAltura();
-
             return (nomes, idades, alturas);
+        }
+    }
+    public static class AtribuirCalculos
+    {
+        public static (double mediaIdade, double mediaAltura) AtribuirMedias(int[] idades, double[] alturas)
+        {
+            double mediaIdade = Calcular.CalcularMediaIdade(idades);
+            double mediaAltura = Calcular.CalcularMediaAltura(alturas);
+            return (mediaIdade, mediaAltura);
         }
     }
     public static class Calcular
