@@ -59,4 +59,27 @@ namespace Pessoas
             return idades;
         }
     }
+    public class Alturas
+    {
+        public double[] InserirAltura()
+        {
+            double[] alturas = new double[NumeroPessoas.Quantidade];
+
+            for (int i = 0; i < alturas.Length; i++)
+            {
+                while(true)
+                {
+                    Console.Write($"Digite a altura da pessoa {i + 1}: ");
+                    if(double.TryParse(Console.ReadLine(), NumberStyles.Float, CultureInfo.InvariantCulture, out double altura) && (altura >= 1 && altura <= 2.50))
+                    {
+                        alturas[i] = altura;
+                        break;
+                    }
+                    LimparTela.Executar();
+                }
+            }
+            Console.Clear();
+            return alturas;
+        }
+    }
 }
