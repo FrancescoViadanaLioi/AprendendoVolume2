@@ -27,12 +27,36 @@ namespace Pessoas
                     LimparTela.Executar();
                 }
             }
+            Console.Clear();
             return nomes;
         }
         private bool NomeEhValido(string nome)
         {
             if (string.IsNullOrWhiteSpace(nome)) return false;
             return nome.All(char.IsLetter);
+        }
+    }
+    public class Idades
+    {
+        public int[] InserirIdade()
+        {
+            int[] idades = new int[NumeroPessoas.Quantidade];
+
+            for (int i = 0; i < idades.Length; i++)
+            {
+                while (true)
+                {
+                    Console.Write($"Digite a idade da pessoa {i + 1}: ");
+                    if(int.TryParse(Console.ReadLine(), out int idade) && idade > 0)
+                    {
+                        idades[i] = idade;
+                        break;
+                    }
+                    LimparTela.Executar();
+                }
+            }
+            Console.Clear();
+            return idades;
         }
     }
 }
