@@ -1,4 +1,6 @@
 ﻿using System;
+using Manipulacao;
+using Saida;
 
 namespace EX28
 {
@@ -6,7 +8,10 @@ namespace EX28
     {
         static void Main(string[] args)
         {
-
+            int[,] matriz = EntradaDeDados.CapturarTamMatriz();
+            OperarMatriz.PreencherMatriz(matriz);
+            ExibirValores.ExibirMatriz(matriz);
+            Console.ReadKey();
         }
     }
 }

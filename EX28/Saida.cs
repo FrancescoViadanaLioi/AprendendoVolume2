@@ -7,9 +7,9 @@ namespace Saida
     {
         public static void ExibirMatriz(int[,] matriz)
         {
-            for(int i = 0;i < matriz.GetLength(0); i++)
+            for(int i = 0; i < matriz.GetLength(0); i++)
             {
-                for (int j = 0; j <matriz.GetLength; j++)
+                for (int j = 0; j < matriz.GetLength(1); j++)
                 {
                     Console.Write($"{matriz[i, j]} ");
                 }
