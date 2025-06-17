@@ -12,7 +12,13 @@ namespace Manipulacao
             while (true)
             {
                 Console.Write("Digite o número de linhas e de colunas da matriz separadas por espaço: ");
-                string[] vect = Console.ReadLine()!.Split(' ');
+                string? input = Console.ReadLine();
+                if (input == null)
+                {
+                    Limpar.LimparTela();
+                    continue;
+                }
+                string[] vect = input.Split(' ');
                 if (vect.Length == 2 && (int.TryParse(vect[0], out m) && m > 0) && (int.TryParse(vect[1], out n) && n > 0)) return new int[m, n];
                 Limpar.LimparTela();
             }
