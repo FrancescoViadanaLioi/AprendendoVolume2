@@ -5,7 +5,7 @@ namespace Entrada
 {
     public class TamanhoMatriz
     {
-        public static int ConfigurarMatriz()
+        public static int[,] ConfigurarMatriz()
         {
             while (true)
             {
