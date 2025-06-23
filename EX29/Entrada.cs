@@ -10,8 +10,8 @@ namespace Entrada
             while (true)
             {
                 Console.Write("Digite o tamanho da matriz(quadrada): ");
-                string input = Console.ReadLine();
-                if (int.TryParse(input, out int m) && m > 0) return new int[m,m];
+                string? input = Console.ReadLine();
+                if (input != null && int.TryParse(input, out int m) && m > 0) return new int[m,m];
                 Limpar.LimparTela();
             }
         }

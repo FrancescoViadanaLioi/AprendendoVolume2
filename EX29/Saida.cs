@@ -4,6 +4,19 @@ namespace Saida
 {
     public class Exibir
     {
+        public static void ExibirMatriz(int[,] matriz)
+        {
+            Console.WriteLine("MATRIZ PRINCIPAL");
+            for (int i = 0; i < matriz.GetLength(0); i++)
+            {
+                for(int j = 0; j < matriz.GetLength(1); j++)
+                {
+                    Console.Write($"{matriz[i, j]} ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
         public static void ExibirDiagonais(int[,] matriz)
         {
             Console.WriteLine("DIAGONAL PRINCIPAL");
