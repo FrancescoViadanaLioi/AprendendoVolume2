@@ -35,7 +35,7 @@ namespace Entrada
                 Console.Write($"Digite o elemento da posição [{i}][{j}]: ");
                 string? input = Console.ReadLine();
                 if (input != null && int.TryParse(input, out int valor)) return valor;
-                Limpar.LimparTelas();
+                Limpar.LimparTela();
             }
         }
     }

@@ -1,5 +1,4 @@
 using System;
-using Entrada;
 
 namespace Saida
 {
@@ -13,6 +12,23 @@ namespace Saida
                 Console.Write($"{matriz[i, i]} ");
             }
             Console.WriteLine();
+        }
+        public static void ExibirNegativos(int[,] matriz)
+        {
+            bool temNegativo = false;
+            Console.WriteLine("NÚMEROS NEGATIVOS");
+            foreach (int num in matriz)
+            {
+                if (num < 0)
+                {
+                    Console.Write($"{num} ");
+                    temNegativo = true;
+                }
+            }
+            if(!temNegativo)
+            {
+                Console.WriteLine("Não há elementos negativos.");
+            }
         }
     }
 }
